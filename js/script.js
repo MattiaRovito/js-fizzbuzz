@@ -25,19 +25,53 @@
 
 for (var i = 1; i <= 100; i++) {
 
+    document.getElementById('lista').innerHTML += i + ' ';
+
     if (i % 3 === 0) {
-        document.getElementById('lista').innerHTML += i + ' Fizz' + '<br>';
+        document.getElementById('lista').innerHTML +=' Fizz';
     }
 
     if (i % 5 === 0) {
-        document.getElementById('lista').innerHTML += i + ' Buzz' + '<br>';
+        document.getElementById('lista').innerHTML +=' Buzz';
     }
 
     if (i % 3 === 0 && i % 5 === 0){
-        document.getElementById('lista').innerHTML += i + ' FizzBuzz' + '<br>';
+        document.getElementById('lista').innerHTML +=' FizzBuzz';
     }
 
     if (i % 6 === 0) {
-        document.getElementById('lista').innerHTML += i + ' Boolean' + '<br>';
+        document.getElementById('lista').innerHTML +=' Boolean';
     }
+
+    document.getElementById('lista').innerHTML += '<br>';
+}
+
+
+
+// Versione while
+
+var i = 1;
+
+while (i <= 100){
+    document.getElementById('lista').innerHTML += i + ' ';
+
+    if (i % 3 === 0) {
+        document.getElementById('lista').innerHTML +=' Fizz';
+    }
+
+    if (i % 5 === 0) {
+        document.getElementById('lista').innerHTML +=' Buzz';
+    }
+
+    if (i % 3 === 0 && i % 5 === 0){
+        document.getElementById('lista').innerHTML +=' FizzBuzz';
+    }
+
+    if (i % 6 === 0) {
+        document.getElementById('lista').innerHTML +=' Boolean';
+    }
+
+    document.getElementById('lista').innerHTML += '<br>';
+    
+    i++;
 }
