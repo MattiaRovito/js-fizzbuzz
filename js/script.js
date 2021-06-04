@@ -8,20 +8,7 @@
 
 // Step 5 Bonus Se il numero è anche divisibile per 6, aggiungiamo "Boolean".6 diventerà quindi FizzBoolean, 30 diventerà FizzBuzzBoolean e via dicendo.
 
-
-// for (var i = 1; i <= 100; i++)  { 
-
-//     if (i % 3 === 0 && i % 5 === 0) {
-//         document.getElementById('lista').innerHTML += i + ' FizzBuzz' + '<br>';
-//     } else if (i % 3 === 0){
-//         document.getElementById('lista').innerHTML += i + ' Fizz' + '<br>';
-//     } else if (i % 5 === 0){
-//         document.getElementById('lista').innerHTML += i + ' Buzz' + '<br>';
-//     }
-    
-// }
-
-
+// Versione for
 
 for (var i = 1; i <= 100; i++) {
 
@@ -35,11 +22,11 @@ for (var i = 1; i <= 100; i++) {
         document.getElementById('lista').innerHTML +=' Buzz';
     }
 
-    if (i % 3 === 0 && i % 5 === 0){
-        document.getElementById('lista').innerHTML +=' FizzBuzz';
-    }
+    // if (i % 3 === 0 && i % 5 === 0){
+    //     document.getElementById('lista').innerHTML +=' FizzBuzz';
+    // }
 
-    if (i % 6 === 0) {
+    if(i % 6 === 0) {
         document.getElementById('lista').innerHTML +=' Boolean';
     }
 
@@ -63,9 +50,9 @@ while (i <= 100){
         document.getElementById('lista').innerHTML +=' Buzz';
     }
 
-    if (i % 3 === 0 && i % 5 === 0){
-        document.getElementById('lista').innerHTML +=' FizzBuzz';
-    }
+    // if (i % 3 === 0 && i % 5 === 0){
+    //     document.getElementById('lista').innerHTML +=' FizzBuzz';
+    // }
 
     if (i % 6 === 0) {
         document.getElementById('lista').innerHTML +=' Boolean';
@@ -75,3 +62,6 @@ while (i <= 100){
     
     i++;
 }
+
+
+
